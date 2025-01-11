@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+/* -------head section -----*/
+body {
+  background: #000;
+  color: aliceblue;
+}
+.learnMore {
+  width: 100px;
+  height: 30px;
+  margin-top: 12px;
+  background: #523498;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-size: 15px;
+  text-decoration: none;
+  color: #fff;
+}
+.learnMore:hover {
+  background: #87868689;
+  color: #000;
+}
+header {
+  width: 100%;
+  aspect-ratio: 16/9;
+  filter: saturate(50%);
+  background-image: url("photo/cloudmountain.jpg");
+  background-size: cover;
+  background-position: center;
+}
+/* -------navigation bar -----
+position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate (-50% ,-50%);*/
+    .nav-logo{
+      color: #00226b;
+    }
+.navbar {
+  width: 100%;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nav-menu {
+  width: 60%;
+}
+
+.nav-menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+}
+
+.nav-menu ul li {
+  list-style: none;
+  margin-left:50px;
+}
+.nav-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.nav-menu ul li a:hover {
+  color: #282875;
+}
+.nav-menu .fst:first-child {
+  color: #49497e;
+}
+
+.nav-menu ul .contact {
+  width: 90px;
+  height: 24px;
+  background: #523498;
+  text-align: center;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+.nav-menu ul .contact:hover {
+  background: #87868689;
+  color: #000;
+}
+
+/* -------head intro -----*/
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease;
+}
+.intro h3 {
+  font-size: 30px;
+}
+
+.intro h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  font-family: Courier;
+  margin-top: 12px;
+}
+.intro .more {
+  width: 600px;
+  height: 90px;
+  display: none;
+  transition: all 1s ease;
+}
+
+/* ---------main  -----*/
+
+.main {
+  margin-top: 20px;
+  text-align: center;
+}
+.main h1 {
+  margin: 23px;
+  text-decoration: underline;
+  font-size: 60px;
+  color: #49497e;
+}
+
+.container {
+  width: 100%;
+  aspect-ratio: 16/9;
+  display: flex;
+  justify-content: center;
+}
+
+.content1,
+.content2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8px;
+}
+
+.container img {
+  width: 100%;
+  aspect-ratio: 16/12;
+  padding: 34px;
+  border-radius: 50px;
+  transition: all 0.5s ease;
+}
+.container img:hover {
+  padding: 20px;
+}
+
+.container h3 {
+  font-size: 30px;
+  color: #49497e;
+}
+.container p {
+  margin: 15px;
+}
+
+/* ---------explore  -----*/
+
+.explore-section {
+  width: 100%;
+  aspect-ratio: 16/4;
+  filter: saturate(40%);
+  background: url("photo/mountain .jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.explore-section .explore {
+  padding: 60px;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+
+  width: 70%;
+}
+.explore h3 {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+/* ---------destination  -----*/
+
+.destiny {
+  display: flex;
+  width: 90%;
+  margin: 40px;
+  aspect-ratio: 16/9;
+  margin-top: 50px;
+}
+
+.destiny .des-info {
+  width: 40%;
+  margin-right: 40px;
+  margin-left: 28px;
+  margin-top: 4%;
+}
+.destiny .des-info h1 {
+  font-size: 10vmin;
+}
+.destiny .des-info p {
+  font-size: 2vmin;
+}
+
+.destiny .desimg {
+  width: 50%;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.destiny .desimg img {
+  width: 40%;
+  height: 300px;
+  margin: 5px;
+  object-fit: cover;
+  transition: all 0.5s ease;
+  padding: 6px;
+}
+
+.destiny .desimg img:hover {
+  padding: 0px;
+}
+
+/* ---------destination  -----*/
+footer {
+  width: 100%;
+  height: 10vh;
+  background: #49497e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  margin: 2px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fc036b;
+}
+
+/* For devices with a maximum width of 768px (e.g., tablets) */
+@media only screen and (max-width: 768px) {
+  header {
+    aspect-ratio: auto; /* Adjust aspect ratio as needed */
+  }
+  .navbar {
+    height: auto;
+  }
+  .nav-menu {
+    width: 100%;
+  }
+  /* Add more responsive styles as needed */
+}
+
+/* For devices with a maximum width of 576px (e.g., smartphones) */
+@media only screen and (max-width: 576px) {
+  header {
+    aspect-ratio: auto; /* Adjust aspect ratio as needed */
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .nav-menu {
+    width: 100%;
+  }
+  /* Add more responsive styles as needed */
+}
+
+/* For larger screens */
+@media only screen and (min-width: 1200px) {
+  /* Add specific styles for larger screens */
+}
