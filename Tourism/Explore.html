@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>DIVINORA</title>
+  </head>
+  <style>
+    
+    .explore-section {
+  padding: 40px 20px;
+  text-align: center;
+  flex-direction: column;
+  background-color: #242121;
+}
+
+.explore-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #fffcfc;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 3fr));
+  gap: 25px;
+}
+
+.grid-item {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+}
+
+.grid-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.grid-item h2 {
+  font-size: 1.4rem;
+  margin: 15px 0 10px;
+  color: #2c3e50;
+}
+
+.grid-item p {
+  font-size: 1rem;
+  padding: 0 15px 20px;
+  color: #555;
+}
+
+
+  </style>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="nav-logo"><h1>DIVINORA</h1></div>
+        <div class="nav-menu">
+          <ul>
+            <li><a class="fst" href="index.html">home</a></li>
+            <li><a href="Explore.html">Explore</a></li>
+            <li><a href="Destinations.html">Destinations</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="contact"><a href="contact.html">contact</a></li>
+          </ul>
+        </div>
+      </div>     
+    </header>
+
+    <section class="explore-section">
+      <h1>Explore Beautiful Places of Uttarakhand</h1>
+      <div class="grid-container">
+        
+        <div class="grid-item">
+          <img src="photo/jungle.jpg" alt="Nainital">
+          <h2>Nainital</h2>
+          <p>Picturesque lake town surrounded by emerald hills and a peaceful vibe.</p>
+        </div>
+    
+        <div class="grid-item">
+          <img src="photo/cloudmountain.jpg" alt="Mussoorie">
+          <h2>Mussoorie</h2>
+          <p>Charming hill station with scenic views and colonial heritage.</p>
+        </div>
+    
+        <div class="grid-item">
+          <img src="photo/rishikesh.jpg" alt="Rishikesh">
+          <h2>Rishikesh</h2>
+          <p>Yoga capital of the world, known for adventure sports and spiritual energy.</p>
+        </div>
+    
+        <div class="grid-item">
+          <img src="photo/haridwar.jpg" alt="Haridwar">
+          <h2>Haridwar</h2>
+          <p>Holy city on the banks of the Ganges, famous for evening Ganga Aarti.</p>
+        </div>
+    
+        <div class="grid-item">
+          <img src="photo/kedarnath.jpg" alt="Kedarnath Temple">
+          <h2>Kedarnath</h2>
+          <p>One of the Char Dhams, nestled in the Himalayas, devoted to Lord Shiva.</p>
+        </div>
+    
+        <div class="grid-item">
+          <img src="photo/badrinath.jpg" alt="Badrinath">
+          <h2>Badrinath</h2>
+          <p>Sacred pilgrimage site and temple of Lord Vishnu in majestic surroundings.</p>
+        </div>
+      
+        <div class="grid-item">
+          <img src="photo/homestay.jpg" alt="Chopta">
+          <h2>Chopta</h2>
+          <p>Mini Switzerland of India, gateway to Tungnath and Chandrashila trek.</p>
+        </div>
+    
+        <div class="grid-item">
+          <img src="photo/valleyofflowers.jpg" alt="Valley of Flowers">
+          <h2>Valley of Flowers</h2>
+          <p>UNESCO World Heritage site with vibrant alpine flora and scenic treks.</p>
+        </div>
+    
+        <div class="grid-item">
+          <img src="photo/jimcorbett.jpg" alt="Jim Corbett National Park">
+          <h2>Jim Corbett</h2>
+          <p>India's oldest national park, home to the Bengal tiger and rich wildlife.</p>
+        </div>  
+    
+        <div class="grid-item">
+          <img src="photo/tungnath.jpg" alt="Tungnath">
+          <h2>Tungnath</h2>
+          <p>Highest Shiva temple in the world, located in serene Garhwal hills.</p>
+        </div>
+    
+        <div class="grid-item">
+          <img src="photo/tehri.jpg" alt="Tehri Lake">
+          <h2>Tehri Lake</h2>
+          <p>Artificial reservoir offering boating and water adventure sports.</p>
+        </div>
+    
+        <div class="grid-item">
+          <img src="photo/uttarkashi.jpg" alt="Uttarkashi">
+          <h2>Uttarkashi</h2>
+          <p>Spiritual and trekking base town near Gangotri and Yamunotri routes.</p>
+        </div>
+    
+        <div class="grid-item">
+          <img src="photo/surkanda.jpg" alt="Surkanda Devi Temple">
+          <h2>Surkanda Devi</h2>
+          <p>Sacred temple dedicated to Goddess Durga, offering panoramic views and peaceful vibes.</p>
+        </div>
+      </div>
+    </section>
+    
+
+    <footer class="">
+      <p>"Copyright ©1999-2029 DIVINORA.com. All rights reserved."</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
